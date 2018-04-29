@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Sockets</title>
+	<script type="text/javascript" src="timesel.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="initPage()" bgcolor="#D3D3D3">
+<center>
+	<h1>Auto Timer</h1>
+	<br>
+	Time Now : 
+	<?php
+		echo "Hello World!";
+	?> 
+	<br><br>
+	Enter the time for which the socket should auto turn on/off, 
+	<select name = "socket" id = 'socket' onchange="updateBox(this)">
+		<option value = '0'>Socket 1</option>
+		<option value = '1'>Socket 2</option>
+		<option value = '2'>Socket 3</option>
+		<option value = '3'>Socket 4</option>
+	</select>
+	<br><br>
+	<style>
+			table.roundedCorners { 
+				border: 2px solid black;
+				border-radius: 13px; 
+				border-spacing: 0;
+			}
+			table.roundedCorners td, 
+			table.roundedCorners th { 
+				border: 1px solid black;
+				padding: 10px; 
+			}
+			table.roundedCorners tr:last-child td {
+				border-bottom: none;
+			}
+			table.roundedCorners tr:first-child td {
+				border-top: none;
+			}
+			table.roundedCorners tr td:last-child {
+				border-right: none;
+			}
+			table.roundedCorners tr:last-child th {
+				border-left: none;
+				border-bottom: none;
+			}
+			table.roundedCorners tr:first-child th {
+				border-left: none;
+				border-top: none;
+			}
+			table.roundedCorners td:hover {
+				background-color: #f5f5f5;
+				cursor: pointer;
+			}
+			tr {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
+	<div id = 'chkbxs'>
+		<table class = "roundedCorners" id = "area">
+			<tr id = 'am'>
+				<th>
+					AM
+				</th>
+			</tr>
+			<tr id = 'pm'>
+				<th>
+					PM
+				</th>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<button type = "button" onclick = 'submit()'>Update</button>
+	<br><br>
+	<a href="index.html"><i>Click here to <b>go back</b></i>.
+</center>
+</body>
+</html>

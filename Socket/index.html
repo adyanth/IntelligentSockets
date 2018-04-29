@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Sockets</title>
+	<script type="text/javascript" src="annyang.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="initPage()" bgcolor="#D3D3D3">
+	<center>
+		<h1>Intelligent Sockets<br>Control Panel</h1>
+		<br><br><br>
+		<style>
+				table.roundedCorners { 
+					border: 2px solid black;
+					border-radius: 13px; 
+					border-spacing: 0;
+				}
+				table.roundedCorners td, 
+				table.roundedCorners th { 
+					border-bottom: 1px solid black;
+					padding: 10px; 
+				}
+				table.roundedCorners tr:last-child > td,
+				table.roundedCorners tr:last-child > th {
+				  border-bottom: none;
+				}
+			</style>
+		<div id = "swstate">
+			<table class = "roundedCorners">
+				<tr>
+					<th>
+						Socket
+					</th>
+					<th>
+						1
+					</th>
+					<th>
+						2
+					</th>
+					<th>
+						3
+					</th>
+					<th>
+						4
+					</th>
+				</tr>
+				<tr>
+					<th>
+						State
+					</th>
+					<td>
+						<span id  = '0'></span>
+					</td>
+					<td>
+						<span id  = '1'></span>
+					</td>
+					<td>
+						<span id  = '2'></span>
+					</td>
+					<td>
+						<span id  = '3'></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<b><i>Click/Touch/Speak to turn on or off.</i></b>
+			and <a href="timesel.php"><i>click here to go to <b>Auto Timer</b></i></a> page
+			or <a href="timenow.php"><i>click here to go to <b>Manual Timer</b></i></a>.
+			<br>
+			<a href="livecam/"><i>Live feed</i></a>
+			<br>
+			<span id='status'></span>
+			<br>
+			<span id='speech'></span>
+		</div>
+	</center>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
